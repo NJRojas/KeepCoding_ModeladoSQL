@@ -4,5 +4,6 @@ inner join car_fleet_kc.brands b on m.brand = b.idbrand)
 inner join car_fleet_kc.businessgroup g on b.businessgroup = g.idgroup)
 inner join car_fleet_kc.colors c on car.color = c.idcolor)
 inner join car_fleet_kc.historyinsurance hi on hi.car = car.idcar)
-inner join car_fleet_kc.insurancecompany ic on ic.idCompany = hi.company);
+inner join car_fleet_kc.insurancecompany ic on ic.idCompany = hi.company)
+WHERE car.dischargeDate > '2023-01-30';
 

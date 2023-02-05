@@ -216,6 +216,7 @@ INSERT INTO CAR_FLEET_KC.brands (idBrand, "name", businessgroup) VALUES('B00025'
 INSERT INTO CAR_FLEET_KC.brands (idBrand, "name", businessgroup) VALUES('B00026','Alfa Romeo','G013');
 
 --- Add Models
+INSERT INTO CAR_FLEET_KC.models (idModel, "name", brand) VALUES('M00000','Montero','B00011');
 INSERT INTO CAR_FLEET_KC.models (idModel, "name", brand) VALUES('M00001','WRANGLER 4-DOOR FREEDOM 4X4','B00025');
 INSERT INTO CAR_FLEET_KC.models (idModel, "name", brand) VALUES('M00002','BMW iX1','B00014');
 INSERT INTO CAR_FLEET_KC.models (idModel, "name", brand) VALUES('M00003','Mini Cooper 3 doors premium','B00014');
@@ -229,6 +230,7 @@ INSERT INTO CAR_FLEET_KC.models (idModel, "name", brand) VALUES('M00010','Eclips
 INSERT INTO CAR_FLEET_KC.models (idModel, "name", brand) VALUES('M00011','Clase G','B00012');
 
 --- Add Cars
+INSERT INTO CAR_FLEET_KC.cars (idCar, color, model, carRegistration, purchaseDate, dischargeDate, currency, purchaseValue, totalkm) VALUES('A00000','C22222','M00000','0023 OLD','2005-10-29','2021-12-30','EUR',9000,82400);
 INSERT INTO CAR_FLEET_KC.cars (idCar, color, model, carRegistration, purchaseDate, currency, purchaseValue, totalkm) VALUES('A00001','C22222','M00001','0123 GXP','2022-08-01','EUR',150000,2000);
 INSERT INTO CAR_FLEET_KC.cars (idCar, color, model, carRegistration, purchaseDate, currency, purchaseValue, totalkm) VALUES('A00002','C99999','M00002','2934 NEY','2022-08-16','EUR',70000,1700);
 INSERT INTO CAR_FLEET_KC.cars (idCar, color, model, carRegistration, purchaseDate, currency, purchaseValue, totalkm) VALUES('A00003','C99880','M00003','3456 NIC','2022-09-01','EUR',45000,3000);
@@ -243,6 +245,7 @@ INSERT INTO CAR_FLEET_KC.cars (idCar, color, model, carRegistration, purchaseDat
 
 
 --- Add History Insurance
+INSERT INTO CAR_FLEET_KC.historyinsurance (idInsurance, car, company, purchaseDate, currency, value) VALUES('I00000','A00000','IC0001','2020-12-30','EUR',1000);
 INSERT INTO CAR_FLEET_KC.historyinsurance (idInsurance, car, company, purchaseDate, currency, value) VALUES('I00001','A00001','IC0001','2022-08-02','EUR',5000);
 INSERT INTO CAR_FLEET_KC.historyinsurance (idInsurance, car, company, purchaseDate, currency, value) VALUES('I00002','A00002','IC0002','2022-08-17','EUR',2500);
 INSERT INTO CAR_FLEET_KC.historyinsurance (idInsurance, car, company, purchaseDate, currency, value) VALUES('I00003','A00003','IC0003','2022-09-02','EUR',1500);
@@ -257,6 +260,7 @@ INSERT INTO CAR_FLEET_KC.historyinsurance (idInsurance, car, company, purchaseDa
 
 
 --- Add History Reviews
+INSERT INTO CAR_FLEET_KC.historyCarReviews (idReview, car, reviewDate, currency, value, KM) VALUES('R00000','A00000','2020-12-30','EUR',200,76800);
 INSERT INTO CAR_FLEET_KC.historyCarReviews (idReview, car, reviewDate, currency, value, KM) VALUES('R00001','A00001','2022-08-02','EUR',300,25);
 INSERT INTO CAR_FLEET_KC.historyCarReviews (idReview, car, reviewDate, currency, value, KM) VALUES('R00002','A00002','2022-08-17','EUR',150,50);
 INSERT INTO CAR_FLEET_KC.historyCarReviews (idReview, car, reviewDate, currency, value, KM) VALUES('R00003','A00003','2022-09-02','EUR',150,25);
